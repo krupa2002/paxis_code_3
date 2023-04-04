@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Bubble Sort</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>In this article, we will discuss the Bubble sort Algorithm. The working procedure of bubble sort is simplest. This article will be very helpful and interesting to students as they might face bubble sort as a question in their examinations. So, it is important to discuss the topic.<br>
+
+        Bubble sort works on the repeatedly swapping of adjacent elements until they are not in the intended order. It is called bubble sort because the movement of array elements is just like the movement of air bubbles in the water. Bubbles in water rise up to the surface; similarly, the array elements in bubble sort move to the end in each iteration.<br>
+        
+        Although it is simple to use, it is primarily used as an educational tool because the performance of bubble sort is poor in the real world. It is not suitable for large data sets. The average and worst-case complexity of Bubble sort is O(n2), where n is a number of items.<br><br>
+        
+        Bubble short is majorly used where -<br>
+        
+        - complexity does not matter<br>
+        - simple and shortcode is preferred <br> </p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Algorithm</h3>
+      <p class="w3-justify">
+        In the algorithm given below, suppose arr is an array of n elements. The assumed swap function in the algorithm will swap the values of given array elements.
+            <br> <br>
+            begin BubbleSort(arr)   <br>
+            for all array elements   <br>
+               if arr[i] > arr[i+1]   <br>
+                  swap(arr[i], arr[i+1])   <br>
+               end if   <br>
+            end for      <br>
+            return arr      <br>
+         end BubbleSort  </p>
+    </div>
+    <div>
+    <h3>Working of Bubble Sort</h3>
+    <p class="w3-justify">
+        Now, let's see the working of Bubble sort Algorithm. <br> <br>
+
+To understand the working of bubble sort algorithm, let's take an unsorted array. We are taking a short and accurate array, as we know the complexity of bubble sort is O(n2). <br>
+
+Let the elements of array are - <br> <br>
+
+Bubble sort Algorithm <br>
+First Pass <br>
+Sorting will start from the initial two elements. Let compare them to check which is greater. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 32 is greater than 13 (32 > 13), so it is already sorted. Now, compare 32 with 26. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 26 is smaller than 36. So, swapping is required. After swapping new array will look like - <br> <br>
+
+Bubble sort Algorithm <br>
+Now, compare 32 and 35. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 35 is greater than 32. So, there is no swapping required as they are already sorted. <br> <br>
+
+Now, the comparison will be in between 35 and 10. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 10 is smaller than 35 that are not sorted. So, swapping is required. Now, we reach at the end of the array. After first pass, the array will be - <br> <br>
+
+Bubble sort Algorithm <br>
+Now, move to the second iteration. <br> <br>
+
+Second Pass <br>
+The same process will be followed for second iteration. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 10 is smaller than 32. So, swapping is required. After swapping, the array will be - <br> <br>
+
+Bubble sort Algorithm <br>
+Now, move to the third iteration. <br> <br>
+
+Third Pass <br>
+The same process will be followed for third iteration. <br> <br>
+
+Bubble sort Algorithm <br>
+Here, 10 is smaller than 26. So, swapping is required. After swapping, the array will be - <br> <br>
+
+Bubble sort Algorithm <br>
+Now, move to the fourth iteration. <br> <br>
+
+Fourth pass <br>
+Similarly, after the fourth iteration, the array will be - <br> <br>
+
+Bubble sort Algorithm <br>
+Hence, there is no swapping required, so the array is completely sorted. <br> <br>
+    </p>
+  </div>
+
+  <div>
+    <h3>Bubble sort complexity</h3>
+    <p class="w3-justify">
+        Bubble sort complexity<br>
+Now, let's see the time complexity of bubble sort in the best case, average case, and worst case. We will also see the space complexity of bubble sort.<br><br>
+
+1. Time Complexity<br>
+Case	Time Complexity<br>
+Best Case	O(n)<br>
+Average Case	O(n2)<br>
+Worst Case	O(n2)<br>
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of bubble sort is O(n).<br>
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of bubble sort is O(n2).<br>
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of bubble sort is O(n2).<br><br><br>
+2. Space Complexity<br>
+Space Complexity	O(1)<br>
+Stable	YES<br><br>
+The space complexity of bubble sort is O(1). It is because, in bubble sort, an extra variable is required for swapping.<br>
+The space complexity of optimized bubble sort is O(2). It is because two extra variables are required in optimized bubble sort.<br>
+
+  </div>
+
+  
+
+  <div>
+    <h3>Conculsion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br>
+
+        This article was not only limited to the algorithm. We have also discussed the algorithm's complexity and working<br>
+    </p>
+  </div>
+
+</div>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Insertion Sort Algorithm</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>In this article, we will discuss the Insertion sort Algorithm. The working procedure of insertion sort is also simple. This article will be very helpful and interesting to students as they might face insertion sort as a question in their examinations. So, it is important to discuss the topic.<br>
+
+        Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.<br>
+        
+        The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets as the time complexity of insertion sort in the average case and worst case is O(n2), where n is the number of items. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.<br><br>
+        
+        Insertion sort has various advantages such as -<br><br>
+        
+        - Simple implementation<br>
+        - Efficient for small data sets<br>
+        - Adaptive, i.e., it is appropriate for data sets that are already substantially sorted.<br>
+        Now, let's see the algorithm of insertion sort.</p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Algorithm</h3>
+      <p class="w3-justify">
+        The simple steps of achieving the insertion sort are listed as follows -<br><br>
+
+        Step 1 - If the element is the first element, assume that it is already sorted. Return 1.<br>
+        
+        Step 2 - Pick the next element, and store it separately in a key.<br>
+        
+        Step 3 - Now, compare the key with all elements in the sorted array.<br>
+        
+        Step 4 - If the element in the sorted array is smaller than the current element, then move to the next element. Else, shift greater elements in the array towards the right.<br>
+        
+        Step 5 - Insert the value.<br>
+        
+        Step 6 - Repeat until the array is sorted.</p><br>
+    </div>
+    <div>
+    <h3>AInsertion sort complexity
+    </h3>
+    <p class="w3-justify">
+        Now, let's see the time complexity of insertion sort in best case, average case, and in worst case. We will also see the space complexity of insertion sort.<br>
+    </p>
+
+  </div>
+
+  <div>
+    <h3>1. Time Complexity</h3>
+    <p class="w3-justify">
+        Case	Time Complexity<br>
+        Best Case<br>
+        O(n)<br>
+        Average Case<br>
+        O(n2)<br>
+        Worst Case<br>
+        O(n2)<br>
+        Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of insertion sort is O(n).<br>
+        Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of insertion sort is O(n2).<br>
+        Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of insertion sort is O(n2).<br>
+        <br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>2. Space Complexity</h3>
+    <p class="w3-justify">
+        Space Complexity<br>
+        O(1)<br>
+        Stable<br>
+        YES<br>
+        The space complexity of insertion sort is O(1). It is because, in insertion sort, an extra variable is required for swapping.<br>
+    </p>
+  </div>
+
+  <div>
+    <h3>Conculsion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br><br>
+
+This article was not only limited to the algorithm. We have also discussed the algorithm's complexity and algorithm.
+    </p>
+  </div>
+
+</div>
+
+  
+
+</body>
+</html>

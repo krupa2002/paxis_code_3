@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide"> Kruskal's Algorithm</h2>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+        In this article, we will discuss Kruskal's algorithm. Here, we will also see the complexity, working, example, and implementation of the Kruskal's algorithm.<br>
+
+        But before moving directly towards the algorithm, we should first understand the basic terms such as spanning tree and minimum spanning tree.<br>
+        
+        Spanning tree - A spanning tree is the subgraph of an undirected connected graph.<br>
+        
+        Minimum Spanning tree - Minimum spanning tree can be defined as the spanning tree in which the sum of the weights of the edge is minimum. The weight of the spanning tree is the sum of the weights given to the edges of the spanning tree.<br>
+        
+        Now, let's start with the main topic.<br>
+        
+        Kruskal's Algorithm is used to find the minimum spanning tree for a connected weighted graph. The main target of the algorithm is to find the subset of edges by using which we can traverse every vertex of the graph. It follows the greedy approach that finds an optimum solution at every stage instead of focusing on a global optimum.
+        
+        
+    </div>
+
+
+
+    <div>
+        <h3>How does Kruskal's algorithm work?</h3>
+        <p class="w3-justify">
+            In Kruskal's algorithm, we start from edges with the lowest weight and keep adding the edges until the goal is reached. <br>The steps to implement Kruskal's algorithm are listed as follows -<br>
+
+First, sort all the edges from low weight to high.<br>
+Now, take the edge with the lowest weight and add it to the spanning tree. If the edge to be added creates a cycle, then reject the edge.<br>
+Continue to add the edges until we reach all vertices, and a minimum spanning tree is created.<br><br>
+The applications of Kruskal's algorithm are -<br>
+
+Kruskal's algorithm can be used to layout electrical wiring among cities.<br>
+It can be used to lay down LAN connections.<br>
+        </p>
+      </div>
+
+
+      <div>
+        <h3>Example of Kruskal's algorithm</h3>
+        <p class="w3-justify">
+            Now, let's see the working of Kruskal's algorithm using an example. It will be easier to understand Kruskal's algorithm using an example.<br><br>
+            Suppose a weighted graph is -
+            <img src="https://static.javatpoint.com/ds/images/kruskals-algorithm1.png">
+
+            The weight of the edges of the above graph is given in the below table -<br><br>
+
+Edge	AB	AC	AD	AE	BC	CD	DE<br>
+Weight	1	7	10	5	3	4	2<br>
+Now, sort the edges given above in the ascending order of their weights.<br><br>
+
+Edge	AB	DE	BC	CD	AE	AC	AD<br>
+Weight	1	2	3	4	5	7	10<br><br>
+
+
+
+        </p>
+      </div>
+
+      <div>
+        <h3>Algorithms</h3>
+        <p class="w3-justify">
+            Step 1: Create a forest F in such a way that every vertex of the graph is a separate tree.  <br>
+Step 2: Create a set E that contains all the edges of the graph.  <br>
+Step 3: Repeat Steps 4 and 5 while E is NOT EMPTY and F is not spanning  <br>
+Step 4: Remove an edge from E with minimum weight  
+Step 5: IF the edge obtained in Step 4 connects two different trees, then add it to the forest F   
+(for combining two trees into one tree).  
+ELSE  
+Discard the edge  
+Step 6: END  
+        </p>
+      </div>
+
+
+
+      <div>
+        <h3>Complexity of Kruskal's algorithm</h3>
+        <p class="w3-justify">
+            Now, let's see the time complexity of Kruskal's algorithm.<br>
+
+Time Complexity<br>
+The time complexity of Kruskal's algorithm is O(E logE) or O(V logV), where E is the no. of edges, and V is the no. of vertices.
+        </p>
+      </div>
+
+      <div>
+        <h3>Conclusion</h3>
+        <p class="w3-justify">
+            In this article, we have discussed the kruskal search technique along with its example and complexity. Here, we have also seen the real-life applications of kruskal that show it the important data structure algorithm.
+            <br>
+            So, that's all about the article. Hope, it will be helpful and informative to you.
+        </p>
+      </div>
+
+    
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  
+
+</body>
+</html>

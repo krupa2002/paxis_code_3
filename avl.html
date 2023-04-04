@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">AVL Tree</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>AVL Tree is invented by GM Adelson - Velsky and EM Landis in 1962. The tree is named AVL in honour of its inventors.<br><br>
+
+        AVL Tree can be defined as height balanced binary search tree in which each node is associated with a balance factor which is calculated by subtracting the height of its right sub-tree from that of its left sub-tree.<br><br>
+        
+        Tree is said to be balanced if balance factor of each node is in between -1 to 1, otherwise, the tree will be unbalanced and need to be balanced.<br><br>
+        <h2>Balance Factor (k) = height (left(k)) - height (right(k))</h2>
+        If balance factor of any node is 1, it means that the left sub-tree is one level higher than the right sub-tree.<br><br>
+
+If balance factor of any node is 0, it means that the left sub-tree and right sub-tree contain equal height.<br><br>
+
+If balance factor of any node is -1, it means that the left sub-tree is one level lower than the right sub-tree.<br><br>
+
+An AVL tree is given in the following figure. We can see that, balance factor associated with each node is in between -1 and +1. therefore, it is an example of AVL tree.<br><br>
+<img src = "Screenshot 2023-04-05 at 12.13.30 AM.png">
+    </p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Complexity</h3>
+      <p class="w3-justify">
+        
+Algorithm	Average case	Worst case<br><br>
+Space	    o(n)	            o(n)<br>
+Search	    o(log n)	        o(log n)<br>
+Insert	    o(log n)	        o(log n)<br>
+Delete	    o(log n)	        o(log n)</p>
+    </div>
+    <div>
+    <h3>Algorithm</h3>
+    <p class="w3-justify">
+        QUICKSORT (array A, start, end)     <br>
+{   <br>
+ 1 if (start < end)      <br>
+ 2 {   <br>
+3 p = partition(A, start, end)   <br>
+4 QUICKSORT (A, start, p - 1)     <br>
+5 QUICKSORT (A, p + 1, end)     <br>
+6 }    <br>
+}   <br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>AVL Rotations</h3>
+    <p class="w3-justify">
+        We perform rotation in AVL tree only in case if Balance Factor is other than -1, 0, and 1. There are basically four types of rotations which are as follows:<br><br>
+
+        1. L L rotation: Inserted node is in the left subtree of left subtree of A<br>
+        2. R R rotation : Inserted node is in the right subtree of right subtree of A<br>
+        3. L R rotation : Inserted node is in the right subtree of left subtree of A<br>
+        4. R L rotation : Inserted node is in the left subtree of right subtree of A<br>
+        5. Where node A is the node whose balance Factor is other than -1, 0, 1.<br>
+
+The first two rotations LL and RR are single rotations and the next two rotations LR and RL are double rotations. For a tree to be unbalanced, minimum height must be at least 2
+    </p>
+  </div>
+
+ 
+
+
+  <div>
+    <h3>Conclusion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br>
+
+        This article was not only limited to the algorithm. Along with the algorithm, we have also discussed the AVL and working.<br>
+        
+         </p>
+  </div>
+
+  
+
+</div>
+
+  
+
+</body>
+</html>

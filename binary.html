@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Binary Search Algorithm</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>In this article, we will discuss the Binary Search Algorithm. Searching is the process of finding some particular element in the list. If the element is present in the list, then the process is called successful, and the process returns the location of that element. Otherwise, the search is called unsuccessful.<br><br>
+
+        Linear Search and Binary Search are the two popular searching techniques. Here we will discuss the Binary Search Algorithm.<br><br>
+        
+        Binary search is the search technique that works efficiently on sorted lists. Hence, to search an element into some list using the binary search technique, we must ensure that the list is sorted.<br><br>
+        
+        Binary search follows the divide and conquer approach in which the list is divided into two halves, and the item is compared with the middle element of the list. If the match is found then, the location of the middle element is returned. Otherwise, we search into either of the halves depending upon the result produced through the match.<br><br>
+        
+    </p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Algorithm</h3>
+      <p class="w3-justify">
+        Binary_Search(a, lower_bound, upper_bound, val) // 'a' is the given array, 'lower_bound' is the index of the first array element, 'upper_bound' is the index of the last array element, 'val' is the value to search  <br>
+Step 1: set beg = lower_bound, end = upper_bound, pos = - 1 <br> 
+Step 2: repeat steps 3 and 4 while beg <=end  <br>
+Step 3: set mid = (beg + end)/2  <br>
+Step 4: if a[mid] = val  <br>
+set pos = mid  <br>
+print pos  <br>
+go to step 6  <br>
+else if a[mid] > val  <br>
+set end = mid - 1  <br>
+else  <br>
+set beg = mid + 1  <br>
+[end of if]  <br>
+[end of loop]  <br>
+Step 5: if pos = -1  <br>
+print "value is not present in the array"  <br>
+[end of if]  <br>
+Step 6: exit  
+<br>
+    </p>
+  </div>
+
+  <div>
+    <h3>Binary Search Complexity</h3>
+    <p class="w3-justify">
+        Now, let's see the time complexity of Binary search in the best case, average case, and worst case. We will also see the space complexity of Binary search.
+    </p>
+  </div>
+
+  <div>
+    <h3>1. Time Complexity</h3>
+    <p class="w3-justify">
+        Case	Time Complexity<br>
+        Best Case	O(1)<br>
+        Average Case	O(logn)<br>
+        Worst Case	O(logn)<br><br>
+        Best Case Complexity - In Binary search, best case occurs when the element to search is found in first comparison, i.e., when the first middle element itself is the element to be searched. The best-case time complexity of Binary search is O(1).<br><br>
+        Average Case Complexity - The average case time complexity of Binary search is O(logn).<br><br>
+        Worst Case Complexity - In Binary search, the worst case occurs, when we have to keep reducing the search space till it has only one element. The worst-case time complexity of Binary search is O(logn).<br><br>
+    </p>
+  </div>
+
+  <div>
+    <h3>2. Space Complexity</h3>
+    <p class="w3-justify">
+        Space Complexity	O(1)<br><br>
+The space complexity of binary search is O(1).<br>
+    </p>
+  </div>
+  <div>
+    <h3>Conclusion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br>
+
+        
+         </p>
+  </div>
+
+  
+
+</div>
+
+  
+
+</body>
+</html>

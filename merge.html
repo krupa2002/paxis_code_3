@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Merge Sort Algorithm</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p> In this article, we will discuss the merge sort Algorithm. Merge sort is the sorting technique that follows the divide and conquer approach. This article will be very helpful and interesting to students as they might face merge sort as a question in their examinations. In coding or technical interviews for software engineers, sorting algorithms are widely asked. So, it is important to discuss the topic.<br><br>
+
+        Merge sort is similar to the quick sort algorithm as it uses the divide and conquer approach to sort the elements. It is one of the most popular and efficient sorting algorithm. It divides the given list into two equal halves, calls itself for the two halves and then merges the two sorted halves. We have to define the merge() function to perform the merging.<br><br>
+        
+        The sub-lists are divided again and again into halves until the list cannot be divided further. Then we combine the pair of one element lists into two-element lists, sorting them in the process. The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.<br><br>
+        
+        Now, let's see the algorithm of merge sort.</p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Algorithm</h3>
+      <p class="w3-justify">
+        In the following algorithm, arr is the given array, beg is the starting element, and end is the last element of the array.<br><br>
+
+        MERGE_SORT(arr, beg, end)  <br>
+          
+        if beg < end  <br>
+        set mid = (beg + end)/2  <br>
+        MERGE_SORT(arr, beg, mid)  <br>
+        MERGE_SORT(arr, mid + 1, end) <br> 
+        MERGE (arr, beg, mid, end)  <br>
+        end of if  <br>
+          
+        END MERGE_SORT  </p>
+    </div>
+    <div>
+    <h3>Merge sort complexity</h3>
+    <p class="w3-justify">
+        
+        Now, let's see the time complexity of merge sort in best case, average case, and in worst case. We will also see the space complexity of the merge sort.
+    </p>
+  </div>
+
+  <div>
+    <h3>1. Time Complexity</h3>
+    <p class="w3-justify">
+        Case	Time Complexity<br>
+        Best Case	O(n*logn)<br>
+        Average Case	O(n*logn)<br>
+        Worst Case	O(n*logn)<br>
+        Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of merge sort is O(n*logn).<br>
+        Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of merge sort is O(n*logn).<br>
+        Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of merge sort is O(n*logn).<br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>2. Space Complexity</h3>
+    <p class="w3-justify">
+        Space Complexity	O(n)<br>
+Stable	YES<br><br>
+The space complexity of merge sort is O(n). It is because, in merge sort, an extra variable is required for swapping.<br>
+    </p>
+  </div>
+
+  <div>
+    <h3>Conculsion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br>
+
+This article was not only limited to the algorithm. We have also discussed the Merge sort complexity and working<br>
+    </p>
+  </div>
+
+</div>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">B Tree</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>B Tree is a specialized m-way tree that can be widely used for disk access. A B-Tree of order m can have at most m-1 keys and m children. One of the main reason of using B tree is its capability to store large number of keys in a single node and large key values by keeping the height of the tree relatively small.<br><br>
+
+        A B tree of order m contains all the properties of an M way tree. In addition, it contains the following properties.<br><br>
+        
+        - Every node in a B-Tree contains at most m children.<br>
+        - Every node in a B-Tree except the root node and the leaf node contain at least m/2 children.<br>
+        - The root nodes must have at least 2 nodes.<br>
+        - All leaf nodes must be at the same level.<br>
+        It is not necessary that, all the nodes contain the same number of children but, each node must have m/2 number of nodes.<br><br>
+        
+        A B tree of order 4 is shown in the following image.<br><br>
+        <img src = "Screenshot 2023-04-05 at 12.25.10 AM.png"><br><br>
+        While performing some operations on B Tree, any property of B Tree may violate such as number of minimum children a node can have. To maintain the properties of B Tree, the tree may split or join.
+
+    </p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Operations</h3>
+      <h4>Searching :</h4>
+      <p class="w3-justify">
+        Searching in B Trees is similar to that in Binary search tree. For example, if we search for an item 49 in the following B Tree. The process will something like following :<br><br>
+
+        - Compare item 49 with root node 78. since 49 < 78 hence, move to its left sub-tree.<br>
+        - Since, 40<49<56, traverse right sub-tree of 40.<br>
+        - 49>45, move to right. Compare 49.<br>
+        - match found, return.<br><br>
+        Searching in a B tree depends upon the height of the tree. The search algorithm takes O(log n) time to search any element in a B tree.</p>
+        <img src = "Screenshot 2023-04-05 at 12.25.46 AM.png">
+    </div>
+    <div>
+    <h3>Inserting</h3>
+    <p class="w3-justify">
+        Insertions are done at the leaf node level. The following algorithm needs to be followed in order to insert an item into B Tree.<br><br>
+
+        1. Traverse the B Tree in order to find the appropriate leaf node at which the node can be inserted.<br>
+        2. If the leaf node contain less than m-1 keys then insert the element in the increasing order.<br>
+        3. Else, if the leaf node contains m-1 keys, then follow the following steps.<br>
+             - Insert the new element in the increasing order of elements.<br>
+             - Split the node into the two nodes at the median.<br>
+             - Push the median element upto its parent node.<br><br>
+
+        If the parent node also contain m-1 number of keys, then split it too by following the same steps.<br><br>
+        Example:<br><br>
+
+        Insert the node 8 into the B Tree of order 5 shown in the following image.<br><br>
+        <img src="Screenshot 2023-04-05 at 12.25.57 AM.png"><br><br>
+        8 will be inserted to the right of 5, therefore insert 8.<br><br>
+        <img src ="Screenshot 2023-04-05 at 12.26.08 AM.png"><br><br>
+        The node, now contain 5 keys which is greater than (5 -1 = 4 ) keys. Therefore split the node from the median i.e. 8 and push it up to its parent node shown as follows.<br><br>
+        <img src = "Screenshot 2023-04-05 at 12.26.20 AM.png">
+    </p>
+  </div>
+
+  <div>
+    <h3>Deletion</h3>
+    <p class="w3-justify">
+    
+        Deletion is also performed at the leaf nodes. The node which is to be deleted can either be a leaf node or an internal node. Following algorithm needs to be followed in order to delete a node from a B tree.<br><br>
+
+        - Locate the leaf node.<br>
+        - If there are more than m/2 keys in the leaf node then delete the desired key from the node.<br>
+        - If the leaf node doesn't contain m/2 keys then complete the keys by taking the element from eight or left sibling.<br>
+        - If the left sibling contains more than m/2 elements then push its largest element up to its parent and move the intervening element down to the node where the key is deleted.<br>
+        - If the right sibling contains more than m/2 elements then push its smallest element up to the parent and move intervening element down to the node where the key is deleted.<br>
+        - If neither of the sibling contain more than m/2 elements then create a new leaf node by joining two leaf nodes and the intervening element of the parent node.<br>
+        - If parent is left with less than m/2 nodes then, apply the above process on the parent too.<br>
+        - If the the node which is to be deleted is an internal node, then replace the node with its in-order successor or predecessor. Since, successor or predecessor will always be on the leaf node hence, the process will be similar as the node is being deleted from the leaf node.<br><br>
+
+Example 1<br><br>
+
+Delete the node 53 from the B Tree of order 5 shown in the following figure.<br><br>
+<img src = "Screenshot 2023-04-05 at 12.26.32 AM.png"><br><br>
+53 is present in the right child of element 49. Delete it.<br><br>
+<img src="Screenshot 2023-04-05 at 12.26.42 AM.png"><br><br>
+Now, 57 is the only element which is left in the node, the minimum number of elements that must be present in a B tree of order 5, is 2. it is less than that, the elements in its left and right sub-tree are also not sufficient therefore, merge it with the left sibling and intervening element of parent i.e. 49.<br><br>
+
+The final B tree is shown as follows.<br><br>
+<img src ="Screenshot 2023-04-05 at 12.26.42 AM.png">
+    </p>
+  </div>
+
+  <div>
+    <h3>Application of B tree</h3>
+    <p class="w3-justify">
+        B tree is used to index the data and provides fast access to the actual data stored on the disks since, the access to value stored in a large database that is stored on a disk is a very time consuming process.<br><br>
+
+        Searching an un-indexed and unsorted database containing n key values needs O(n) running time in worst case. However, if we use B Tree to index this database, it will be searched in O(log n) time in worst case.
+
+    </p>
+  </div>
+
+  
+  
+
+</div>
+
+  
+
+</body>
+</html>

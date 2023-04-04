@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Breadth First Search (BFS)</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>In this article, we will discuss the BFS algorithm in the data structure. Breadth-first search is a graph traversal algorithm that starts traversing the graph from the root node and explores all the neighboring nodes. Then, it selects the nearest node and explores all the unexplored nodes. While using BFS for traversal, any node in the graph can be considered as the root node.
+
+        There are many ways to traverse the graph, but among them, BFS is the most commonly used approach. It is a recursive algorithm to search all the vertices of a tree or graph data structure. BFS puts every vertex of the graph into two categories - visited and non-visited. It selects a single node in a graph and, after that, visits all the nodes adjacent to the selected node.</p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Applications of BFS algorithm</h3>
+      <p class="w3-justify">
+          The applications of breadth-first-algorithm are given as follows -
+            <br>
+        - BFS can be used to find the neighboring locations from a given source location.<br>
+        - In a peer-to-peer network, BFS algorithm can be used as a traversal method to find all the neighboring nodes. Most torrent clients, such as BitTorrent, uTorrent, etc. employ this process to find "seeds" and "peers" in the network.<br>
+        - BFS can be used in web crawlers to create web page indexes. It is one of the main algorithms that can be used to index web pages. It starts traversing from the source page and follows the links associated with the page. Here, every web page is considered as a node in the graph.<br>
+        - BFS is used to determine the shortest path and minimum spanning tree.<br>
+        - BFS is also used in Cheney's technique to duplicate the garbage collection.<br>
+        - It can be used in ford-Fulkerson method to compute the maximum flow in a flow network.</p>
+    </div>
+    <div>
+    <h3>Algorithm</h3>
+    <p class="w3-justify">
+        The steps involved in the BFS algorithm to explore a graph are given as follows -<br>
+
+            Step 1: SET STATUS = 1 (ready state) for each node in G<br>
+
+            Step 2: Enqueue the starting node A and set its STATUS = 2 (waiting state)<br>
+
+            Step 3: Repeat Steps 4 and 5 until QUEUE is empty<br>
+
+            Step 4: Dequeue a node N. Process it and set its STATUS = 3 (processed state).<br>
+
+            Step 5: Enqueue all the neighbours of N that are in the ready state (whose STATUS = 1) and set
+
+            their STATUS = 2<br>
+
+            (waiting state)<br>
+
+            [END OF LOOP]<br>
+
+            Step 6: EXIT
+    </p>
+  </div>
+
+  <div>
+    <h3>Example of BFS Algorithm</h3>
+    <p class="w3-justify">
+        Now, let's understand the working of BFS algorithm by using an example. In the example given below, there is a directed graph having 7 vertices.<br>
+        <img src="https://static.javatpoint.com/ds/images/breadth-first-search-algorithm-example.png">
+        <br>
+        In the above graph, minimum path 'P' can be found by using the BFS that will start from Node A and end at Node E. The algorithm uses two queues, namely QUEUE1 and QUEUE2. QUEUE1 holds all the nodes that are to be processed, while QUEUE2 holds all the nodes that are processed and deleted from QUEUE1.<br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>Complexity of BFS</h3>
+    <p class="w3-justify">
+        Time complexity of BFS depends upon the data structure used to represent the graph. The time complexity of BFS algorithm is O(V+E), since in the worst case, BFS algorithm explores every node and edge. In a graph, the number of vertices is O(V), whereas the number of edges is O(E).
+<br>
+The space complexity of BFS can be expressed as O(V), where V is the number of vertices.
+    </p>
+  </div>
+
+  <div>
+    <h3>Conculsion</h3>
+    <p class="w3-justify">
+        In this article, we have discussed the Breadth-first search technique along with its example and complexity. Here, we have also seen the real-life applications of BFS that show it the important data structure algorithm.
+<br>
+So, that's all about the article. Hope, it will be helpful and informative to you.
+    </p>
+  </div>
+
+</div>
+
+  
+
+</body>
+</html>

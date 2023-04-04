@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="algo.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class=''></i>
+        <div class="logo_name">Praxis Code</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      
+
+     <li>
+        <a href="#">
+          <i class='bx bx-sort' ></i>
+          <span class="links_name">Algorithms</span>
+        </a>
+        <span class="tooltip">Algorithms</span>
+      </li>
+    
+      
+    </li>
+   
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text"style="color:white;">Algorithms</div>
+      <div class="list-group">
+        <h1>
+          Understand Algorithms here!!!
+        </h1><br>
+        <h2>Graphs</h2><br>
+        <a href="bfs.html" class="list-group-item list-group-item-action">BFS</a><br>
+        <a href="dfs.html" class="list-group-item list-group-item-action">DFS</a><br>
+        <a href="kruskal.html" class="list-group-item list-group-item-action ">Kruskal’s Algorithm </a><br>
+        <a href="dijkstra.html" class="list-group-item list-group-item-action ">Dijkstra Algorithm </a><br><br>
+        <h2>Sorting Algorithms</h2><br>
+        <a href="bubble.html" class="list-group-item list-group-item-action">Bubble Sort</a><br>
+        <a href="insertion.html" class="list-group-item list-group-item-action">Insertion Sort</a><br>
+        <a href="merge.html" class="list-group-item list-group-item-action ">Merge Sort </a><br>
+        <a href="quick.html" class="list-group-item list-group-item-action ">Quick Sort </a><br><br>
+        <h2>Trees</h2><br>
+        <a href="treeds.html" class="list-group-item list-group-item-action">Tree Data Structure</a><br>
+        <a href="binarytree.html" class="list-group-item list-group-item-action">Binary Tree</a><br>
+        <a href="avl.html" class="list-group-item list-group-item-action ">AVL Tree</a><br>
+        <a href="b.html" class="list-group-item list-group-item-action ">B Tree </a><br><br>
+        <h2>Searching Algorithms</h2><br>
+        <a href="linear.html" class="list-group-item list-group-item-action">Linear Search</a><br>
+        <a href="binary.html" class="list-group-item list-group-item-action">Binary Search</a><br>
+
+      </div>
+  </section>
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>

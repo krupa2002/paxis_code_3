@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+    
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-justify w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Quick Sort Algorithm</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p>In this article, we will discuss the Quicksort Algorithm. The working procedure of Quicksort is also simple. This article will be very helpful and interesting to students as they might face quicksort as a question in their examinations. So, it is important to discuss the topic.<br>
+
+        Sorting is a way of arranging items in a systematic manner. Quicksort is the widely used sorting algorithm that makes n log n comparisons in average case for sorting an array of n elements. It is a faster and highly efficient sorting algorithm. This algorithm follows the divide and conquer approach. Divide and conquer is a technique of breaking down the algorithms into subproblems, then solving the subproblems, and combining the results back together to solve the original problem.<br>
+        
+        Divide: In Divide, first pick a pivot element. After that, partition or rearrange the array into two sub-arrays such that each element in the left sub-array is less than or equal to the pivot element and each element in the right sub-array is larger than the pivot element.<br><br>
+        
+        Conquer: Recursively, sort two subarrays with Quicksort.<br>
+        
+        Combine: Combine the already sorted array.<br>
+        
+        Quicksort picks an element as pivot, and then it partitions the given array around the picked pivot element. In quick sort, a large array is divided into two arrays in which one holds values that are smaller than the specified value (Pivot), and another array holds the values that are greater than the pivot.<br><br>
+        
+        After that, left and right sub-arrays are also partitioned using the same approach. It will continue until the single element remains in the sub-array.
+        <img src ="https://static.javatpoint.com/ds/images/quick-sort.png">
+    </p>
+    <p class="w3-justify"></p>
+    <div class="w3-row w3-padding-32">
+      <h3>Choosing the pivot</h3>
+      <p class="w3-justify">
+        Picking a good pivot is necessary for the fast implementation of quicksort. However, it is typical to determine a good pivot. Some of the ways of choosing a pivot are as follows -<br><br>
+
+        - Pivot can be random, i.e. select the random pivot from the given array.<br>
+        - Pivot can either be the rightmost element of the leftmost element of the given array.<br>
+        - Select median as the pivot element.</p>
+    </div>
+    <div>
+    <h3>Algorithm</h3>
+    <p class="w3-justify">
+        QUICKSORT (array A, start, end)     <br>
+{   <br>
+ 1 if (start < end)      <br>
+ 2 {   <br>
+3 p = partition(A, start, end)   <br>
+4 QUICKSORT (A, start, p - 1)     <br>
+5 QUICKSORT (A, p + 1, end)     <br>
+6 }    <br>
+}   <br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>Quicksort complexity</h3>
+    <p class="w3-justify">
+        Now, let's see the time complexity of quicksort in best case, average case, and in worst case. We will also see the space complexity of quicksort.<br>
+
+    </p>
+  </div>
+
+  <div>
+    <h3>1. Time Complexity</h3>
+    <p class="w3-justify">
+        Case	Time Complexity<br>
+Best Case	O(n*logn)<br>
+Average Case	O(n*logn)<br>
+Worst Case	O(n2)<br><br>
+Best Case Complexity - In Quicksort, the best-case occurs when the pivot element is the middle element or near to the middle element. The best-case time complexity of quicksort is O(n*logn).<br><br>
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of quicksort is O(n*logn).<br><br>
+Worst Case Complexity - In quick sort, worst case occurs when the pivot element is either greatest or smallest element. Suppose, if the pivot element is always the last element of the array, the worst case would occur when the given array is sorted already in ascending or descending order. The worst-case time complexity of quicksort is O(n2).
+    </p>
+  </div>
+
+  <div>
+    <h3>2. Space Complexity</h3>
+    <p class="w3-justify">
+        Space Complexity	O(n*logn)<br>
+Stable	NO<br>
+The space complexity of quicksort is O(n*logn).<br>
+    </p>
+  </div>
+  <div>
+    <h3>Conclusion</h3>
+    <p class="w3-justify">
+        So, that's all about the article. Hope the article will be helpful and informative to you.<br>
+
+        This article was not only limited to the algorithm. Along with the algorithm, we have also discussed the quick sort complexity and working.<br>
+        
+         </p>
+  </div>
+
+  
+
+</div>
+
+  
+
+</body>
+</html>
